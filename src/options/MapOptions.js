@@ -54,6 +54,9 @@ class MapOptions extends React.Component {
             pickMultipleRaces: false,
             shuffleBoards: false,
             reversePlacementOrder: false,
+            giveMuaatSupernova: false,
+            giveCreussWormhole: false,
+            giveSaarAsteroid: false,
             generated: false,
 
             pickRacesHelp: false,
@@ -1365,6 +1368,21 @@ class MapOptions extends React.Component {
                         <input type="checkbox" className="custom-control-input" id="reversePlacementOrder" name="reversePlacementOrder" checked={this.state.reversePlacementOrder} onChange={this.handleInputChange} />
                         <label className="custom-control-label" htmlFor="reversePlacementOrder">Reverse Placement Order</label>
                         <QuestionCircle className="icon" onClick={this.toggleReversePlacementOrderHelp} />
+                    </div>
+
+                    <div className="custom-control custom-checkbox mb-3 d-flex">
+                        <input type="checkbox" className="custom-control-input" id="giveMuaatSupernova" name="giveMuaatSupernova" checked={this.state.giveMuaatSupernova} onChange={this.handleInputChange} />
+                        <label className="custom-control-label" htmlFor="giveMuaatSupernova"> Give the Embers of Muaat a Supernova</label>
+                    </div>
+                    <div className="custom-control custom-checkbox mb-3 d-flex">
+                        <input type="checkbox" className="custom-control-input" id="giveCreussWormhole" name="giveCreussWormhole" checked={this.state.giveCreussWormhole} onChange={this.handleInputChange} />
+                        <label className="custom-control-label" htmlFor="giveCreussWormhole"> Give the Ghosts of Creuss a Wormhole</label>
+                    </div>
+                    
+                    
+                    <div className="custom-control custom-checkbox mb-3 d-flex">
+                        <input type="checkbox" className="custom-control-input" id="giveSaarAsteroid" name="giveSaarAsteroid" checked={this.state.giveSaarAsteroid} onChange={this.handleInputChange} />
+                        <label className="custom-control-label" htmlFor="giveSaarAsteroid"> Give the Clan of Saar an Asteroid Field</label>
                     </div>
 
                     <SetPlayerNameModal visible={this.state.setPlayerNamesHelp} currentPlayerNames={this.props.currentPlayerNames}
